@@ -1,0 +1,396 @@
+.title {
+  font-size: 42px;
+  margin-bottom: 60px;
+  color: #9978AC;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.text-size-md {
+  font-size: 28px;
+  padding: 160px;
+}
+
+.color-one {
+  color: #1AA49B;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #161b33;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  height: 3.5em;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.icon, .nav {
+  padding: 20px;
+  text-decoration: none;
+}
+
+.home {
+  height: 64em;
+  background-image: url('../images/prague-charles-bridge.jpg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.name {
+  display: flex;
+}
+
+.opacity {
+  width: 50%;
+  height: 64em;
+  margin-top: 60px;
+  overflow: hidden;
+  background: rgba(60, 60, 60, 0.5);
+}
+
+.home-text {
+  margin-top: -750px;
+  margin-left: 100px;
+  width: 45%;
+  text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #FFFFFF;
+  padding-right: 7px;
+}
+
+.btn {
+  background-color: #67366E;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  height: 3em;
+  width: 12em;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  margin: 20px 0px;
+}
+
+a:hover, i:hover {
+  color: #148079;
+}
+
+.btn:hover {
+  background-color: #9978AC;
+}
+
+.about-me {
+  display: flex;
+  flex-direction: row;
+  height: 35em;
+  padding: 100px 50px 0px 50px;
+}
+
+.skills {
+  padding: 100px 50px 250px 50px;
+}
+
+.iconss {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons {
+  font-size: 150px;
+  padding: 50px 50px;
+}
+
+.icons:hover {
+  font-size: 170px;
+}
+
+.experience {
+  height: 55em;
+  padding: 100px 50px 0px 50px;
+}
+
+.companies {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.company {
+  padding: 10px;
+  border: 1px solid #67366E;
+  background-color: #67366E;
+  color: #ffffff;
+  margin: 5px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.company:hover {
+  color: #ffffff;
+  background-color: #9978AC;
+  border: 1px solid #9978AC;
+}
+
+.description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 500px;
+  font-size: 20px;
+}
+
+img {
+  height: 800px;
+  width: 700px;
+  margin: 40px 120px;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.projects {
+  height: 60em;
+  padding: 100px 50px 0px 50px;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center
+}
+
+.box {
+  border: 1px solid #67366E;
+  height: 350px;
+  width: 300px;
+  background-color: #67366E;
+  margin: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.box:hover {
+  background-color: #9978AC;
+  margin: -5px 10px;
+}
+
+.box-icon {
+  font-size: 20px;
+  padding: 3px;
+}
+
+.box-icons {
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 10px 0px 0px;
+}
+
+.box-icon:hover {
+  color: #1AA49B;
+}
+
+.box-text {
+  margin: 40px 20px;
+}
+
+.contact-me {
+  height: 45em;
+  padding: 100px 50px 0px 50px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.contact-text {
+  padding: 50px 0px;
+}
+
+.social-medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 10px;
+}
+
+.social-media:hover {
+  color: #1AA49B;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+}
+
+.sm-icon {
+  font-size: 40px;
+}
+
+.footer {
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Opinionated CSS defaults based on:
+  ! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+*/
+
+html {
+  line-height: 1.2;
+  -webkit-text-size-adjust: 100%;
+}
+
+html, * {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu, "Helvetica Neue", Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  background-color: #161b33;
+  color: #ffffff;
+  font-family: "Inconsolata", sans-serif;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+h2 {
+  text-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+pre {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+b, strong {
+  font-weight: bolder;
+}
+
+code, kbd, samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+small {
+  font-size: 80%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+button, input, optgroup, select, textarea {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+button, select {
+  text-transform: none;
+}
+
+button, [type="button"], [type="reset"], [type="submit"] {
+  -webkit-appearance: button;
+}
+
+button::-moz-focus-inner, [type="button"]::-moz-focus-inner, [type="reset"]::-moz-focus-inner, [type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring, [type="button"]:-moz-focusring, [type="reset"]:-moz-focusring, [type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  padding: 0;
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+[type="number"]::-webkit-inner-spin-button, [type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  -webkit-appearance: textfield;
+  outline-offset: -2px;
+}
+
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  font: inherit;
+}
+
+[hidden] {
+  display: none;
+}
