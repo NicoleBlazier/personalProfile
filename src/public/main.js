@@ -1,18 +1,50 @@
 'use strict';
-
-function openGithub() {
-  window.open('https://www.github.com', '_blank')
+// sudoku github and application
+function openSudokuGit() {
+  window.open('https://github.com/NicoleBlazier/sudoku', '_blank')
 }
 
-const github = document.getElementById('github');
-github.addEventListener('click', openGithub)
+const sudokuGit = document.getElementById('sudoku-github');
+sudokuGit.addEventListener('click', openSudokuGit)
 
-function openArrowUp() {
-  window.open('https://github.com', '_blank')
+function openSudokuApp() {
+  window.open('https://github.com/NicoleBlazier/sudoku', '_blank')
 }
 
-const arrowUp = document.getElementById('arrowUp');
-arrowUp.addEventListener('click', openArrowUp)
+const sudokuApp = document.getElementById('sudoku-app');
+sudokuApp.addEventListener('click', openSudokuApp)
+
+// investment github and application
+function openInvestGit() {
+  window.open('https://github.com/NicoleBlazier/investmentApp', '_blank')
+}
+
+const investGit = document.getElementById('invest-github');
+investGit.addEventListener('click', openInvestGit)
+
+function openInvestApp() {
+  window.open('https://github.com/NicoleBlazier/investmentApp', '_blank')
+}
+
+const investApp = document.getElementById('invest-app');
+investApp.addEventListener('click', openInvestApp)
+
+// form github and applications
+
+function openGit() {
+  window.open('https://github.com/NicoleBlazier/sudoku', '_blank')
+}
+
+const formGit = document.getElementById('form-github');
+formGit.addEventListener('click', openGit)
+
+function openApp() {
+  window.open('https://github.com/NicoleBlazier/sudoku', '_blank')
+}
+
+const formApp = document.getElementById('form-app');
+formApp.addEventListener('click', openApp)
+
 
 function openGmail() {
   window.open('mailto:nicole.blazier@gmail.com?subject=Job Opportunity')

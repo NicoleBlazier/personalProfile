@@ -118,21 +118,49 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-'use strict';
+'use strict'; // sudoku github and application
 
-function openGithub() {
-  window.open('https://www.github.com', '_blank');
+function openSudokuGit() {
+  window.open('https://github.com/NicoleBlazier/sudoku', '_blank');
 }
 
-var github = document.getElementById('github');
-github.addEventListener('click', openGithub);
+var sudokuGit = document.getElementById('sudoku-github');
+sudokuGit.addEventListener('click', openSudokuGit);
 
-function openArrowUp() {
-  window.open('https://github.com', '_blank');
+function openSudokuApp() {
+  window.open('https://github.com/NicoleBlazier/sudoku', '_blank');
 }
 
-var arrowUp = document.getElementById('arrowUp');
-arrowUp.addEventListener('click', openArrowUp);
+var sudokuApp = document.getElementById('sudoku-app');
+sudokuApp.addEventListener('click', openSudokuApp); // investment github and application
+
+function openInvestGit() {
+  window.open('https://github.com/NicoleBlazier/investmentApp', '_blank');
+}
+
+var investGit = document.getElementById('invest-github');
+investGit.addEventListener('click', openInvestGit);
+
+function openInvestApp() {
+  window.open('https://github.com/NicoleBlazier/investmentApp', '_blank');
+}
+
+var investApp = document.getElementById('invest-app');
+investApp.addEventListener('click', openInvestApp); // form github and applications
+
+function openGit() {
+  window.open('https://github.com/NicoleBlazier/sudoku', '_blank');
+}
+
+var formGit = document.getElementById('form-github');
+formGit.addEventListener('click', openGit);
+
+function openApp() {
+  window.open('https://github.com/NicoleBlazier/sudoku', '_blank');
+}
+
+var formApp = document.getElementById('form-app');
+formApp.addEventListener('click', openApp);
 
 function openGmail() {
   window.open('mailto:nicole.blazier@gmail.com?subject=Job Opportunity');
@@ -227,7 +255,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49319" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56732" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
