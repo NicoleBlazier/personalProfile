@@ -128,7 +128,7 @@ var sudokuGit = document.getElementById('sudoku-github');
 sudokuGit.addEventListener('click', openSudokuGit);
 
 function openSudokuApp() {
-  window.open('https://github.com/NicoleBlazier/sudoku', '_blank');
+  window.open('https://sudoku-app-2022.netlify.app/', '_blank');
 }
 
 var sudokuApp = document.getElementById('sudoku-app');
@@ -142,7 +142,7 @@ var investGit = document.getElementById('invest-github');
 investGit.addEventListener('click', openInvestGit);
 
 function openInvestApp() {
-  window.open('https://github.com/NicoleBlazier/investmentApp', '_blank');
+  window.open('https://investment-app-2022.netlify.app/', '_blank');
 }
 
 var investApp = document.getElementById('invest-app');
