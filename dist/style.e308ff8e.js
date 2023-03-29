@@ -189,7 +189,7 @@ var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./../images/prague-charles-bridge.jpg":[["prague-charles-bridge.bf121707.jpg","../images/prague-charles-bridge.jpg"],"../images/prague-charles-bridge.jpg"],"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./../images/home-background.png":[["home-background.7b1889e6.png","../images/home-background.png"],"../images/home-background.png"],"./../images/aboutme-background.png":[["aboutme-background.d75b21b0.png","../images/aboutme-background.png"],"../images/aboutme-background.png"],"./../images/experience-background.png":[["experience-background.ac8705e6.png","../images/experience-background.png"],"../images/experience-background.png"],"./../images/contact-background.png":[["contact-background.1b7777af.png","../images/contact-background.png"],"../images/contact-background.png"],"_css_loader":"../../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -217,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56732" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58703" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

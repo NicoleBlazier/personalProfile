@@ -1,4 +1,12 @@
 'use strict';
+// open resume
+function openResume() {
+  window.open('../images/Blazier_Resume_February_2022.pdf', '_blank')
+}
+
+const resume = document.getElementById('resume');
+resume.addEventListener('click', openResume)
+
 // sudoku github and application
 function openSudokuGit() {
   window.open('https://github.com/NicoleBlazier/sudoku', '_blank')
@@ -14,6 +22,9 @@ function openSudokuApp() {
 const sudokuApp = document.getElementById('sudoku-app');
 sudokuApp.addEventListener('click', openSudokuApp)
 
+const sudokuImage = document.getElementById('sudoku-image');
+sudokuImage.addEventListener('click', openSudokuApp)
+
 // investment github and application
 function openInvestGit() {
   window.open('https://github.com/NicoleBlazier/investmentApp', '_blank')
@@ -28,6 +39,9 @@ function openInvestApp() {
 
 const investApp = document.getElementById('invest-app');
 investApp.addEventListener('click', openInvestApp)
+
+const investmentImage = document.getElementById('investment-image');
+investmentImage.addEventListener('click', openInvestApp)
 
 // form github and applications
 
@@ -74,10 +88,47 @@ function showNovartis() {
 
 showNovartis();
 
-function showExperience(e, companyName) {
-  console.log(e)
-  console.log(companyName)
 
+function navEvent(e) {
+  const className = document.getElementsByClassName('nav-class')
+  for (var i=0; i < className.length; i++) {
+   className[i].className = className[i].className.replace(" active", "");
+  }
+  e.srcElement.className += ' active'
+}
+
+const homeAnchor = document.getElementById('home-anchor');
+homeAnchor.addEventListener('click', function(e) {
+  navEvent(e, 'Home')
+}, false)
+
+const aboutmeAnchor = document.getElementById('aboutme-anchor');
+aboutmeAnchor.addEventListener('click', function(e) {
+  navEvent(e, 'AboutMe')
+}, false)
+
+const skillsAnchor = document.getElementById('skills-anchor');
+skillsAnchor.addEventListener('click', function(e) {
+  navEvent(e, 'Skills')
+}, false)
+
+const experienceAnchor = document.getElementById('experience-anchor');
+experienceAnchor.addEventListener('click', function(e) {
+  navEvent(e, 'Experience')
+}, false)
+
+const projectsAnchor = document.getElementById('projects-anchor');
+projectsAnchor.addEventListener('click', function(e) {
+  navEvent(e, 'Projects')
+}, false)
+
+const contactmeAnchor = document.getElementById('contactme-anchor');
+contactmeAnchor.addEventListener('click', function(e) {
+  navEvent(e, 'Contact-Me')
+}, false)
+
+
+function showExperience(e, companyName) {
   const description = document.getElementsByClassName('description');
   for (var i=0; i < description.length; i++ ) {
     description[i].style.display = "none";
@@ -86,11 +137,13 @@ function showExperience(e, companyName) {
   const company = document.getElementsByClassName('company');
   for (var i=0; i < company.length; i++) {
    company[i].className = company[i].className.replace(" active", "");
- }
+  }
  const name = document.getElementById(companyName);
  console.log(name)
  document.getElementById(companyName).style.display = "block";
- e.path[0].className += " active";
+
+ const nameClass = e.srcElement.className += " active";
+ console.log(nameClass)
 }
 
 
