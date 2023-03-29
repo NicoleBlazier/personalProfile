@@ -1,11 +1,14 @@
 'use strict';
 // open resume
 function openResume() {
-  window.open('../images/Blazier_Resume_February_2022.pdf', '_blank')
+  window.open('./Blazier_Resume_February_2022.pdf', '_blank')
 }
 
 const resume = document.getElementById('resume');
 resume.addEventListener('click', openResume)
+
+const btn = document.getElementById('btn');
+btn.addEventListener('click', openResume)
 
 // sudoku github and application
 function openSudokuGit() {
@@ -44,7 +47,6 @@ const investmentImage = document.getElementById('investment-image');
 investmentImage.addEventListener('click', openInvestApp)
 
 // form github and applications
-
 function openGit() {
   window.open('https://github.com/NicoleBlazier/sudoku', '_blank')
 }
@@ -88,7 +90,31 @@ function showNovartis() {
 
 showNovartis();
 
+// Show logo when hovering
+function showLogo(e) {
+  const logo = document.getElementsByClassName('blazier-logo');
+  for (var i=0; i < logo.length; i++) {
+    console.log(logo[i].className)
+    if (logo[i].className == 'blazier-logo show') {
+      logo[i].className = logo[i].className.replace('blazier-logo show', 'blazier-logo hide')
+    } else if (logo[i].className == 'blazier-logo hide') {
+      logo[i].className = logo[i].className.replace('blazier-logo hide', 'blazier-logo show')
+    }
 
+  }
+}
+
+const blazierLogoOver = document.getElementById('blazier-logo-1');
+blazierLogoOver.addEventListener('mouseover', function(e) {
+  showLogo(e)
+}, false)
+
+const blazierLogoOut = document.getElementById('blazier-logo-2');
+blazierLogoOut.addEventListener('mouseout', function(e) {
+  showLogo(e)
+}, false)
+
+// Highlight the nav bar or experience buttons
 function navEvent(e) {
   const className = document.getElementsByClassName('nav-class')
   for (var i=0; i < className.length; i++) {
@@ -99,32 +125,32 @@ function navEvent(e) {
 
 const homeAnchor = document.getElementById('home-anchor');
 homeAnchor.addEventListener('click', function(e) {
-  navEvent(e, 'Home')
+  navEvent(e)
 }, false)
 
 const aboutmeAnchor = document.getElementById('aboutme-anchor');
 aboutmeAnchor.addEventListener('click', function(e) {
-  navEvent(e, 'AboutMe')
+  navEvent(e)
 }, false)
 
 const skillsAnchor = document.getElementById('skills-anchor');
 skillsAnchor.addEventListener('click', function(e) {
-  navEvent(e, 'Skills')
+  navEvent(e)
 }, false)
 
 const experienceAnchor = document.getElementById('experience-anchor');
 experienceAnchor.addEventListener('click', function(e) {
-  navEvent(e, 'Experience')
+  navEvent(e)
 }, false)
 
 const projectsAnchor = document.getElementById('projects-anchor');
 projectsAnchor.addEventListener('click', function(e) {
-  navEvent(e, 'Projects')
+  navEvent(e)
 }, false)
 
 const contactmeAnchor = document.getElementById('contactme-anchor');
 contactmeAnchor.addEventListener('click', function(e) {
-  navEvent(e, 'Contact-Me')
+  navEvent(e)
 }, false)
 
 

@@ -120,6 +120,14 @@ img {
   margin: 5px 20px;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 /* Sections */
 /* Header Section */
 .header {

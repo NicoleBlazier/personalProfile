@@ -121,11 +121,13 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 'use strict'; // open resume
 
 function openResume() {
-  window.open('../images/Blazier_Resume_February_2022.pdf', '_blank');
+  window.open('./Blazier_Resume_February_2022.pdf', '_blank');
 }
 
 var resume = document.getElementById('resume');
-resume.addEventListener('click', openResume); // sudoku github and application
+resume.addEventListener('click', openResume);
+var btn = document.getElementById('btn');
+btn.addEventListener('click', openResume); // sudoku github and application
 
 function openSudokuGit() {
   window.open('https://github.com/NicoleBlazier/sudoku', '_blank');
@@ -199,7 +201,30 @@ function showNovartis() {
   }
 }
 
-showNovartis();
+showNovartis(); // Show logo when hovering
+
+function showLogo(e) {
+  var logo = document.getElementsByClassName('blazier-logo');
+
+  for (var i = 0; i < logo.length; i++) {
+    console.log(logo[i].className);
+
+    if (logo[i].className == 'blazier-logo show') {
+      logo[i].className = logo[i].className.replace('blazier-logo show', 'blazier-logo hide');
+    } else if (logo[i].className == 'blazier-logo hide') {
+      logo[i].className = logo[i].className.replace('blazier-logo hide', 'blazier-logo show');
+    }
+  }
+}
+
+var blazierLogoOver = document.getElementById('blazier-logo-1');
+blazierLogoOver.addEventListener('mouseover', function (e) {
+  showLogo(e);
+}, false);
+var blazierLogoOut = document.getElementById('blazier-logo-2');
+blazierLogoOut.addEventListener('mouseout', function (e) {
+  showLogo(e);
+}, false); // Highlight the nav bar or experience buttons
 
 function navEvent(e) {
   var className = document.getElementsByClassName('nav-class');
@@ -213,27 +238,27 @@ function navEvent(e) {
 
 var homeAnchor = document.getElementById('home-anchor');
 homeAnchor.addEventListener('click', function (e) {
-  navEvent(e, 'Home');
+  navEvent(e);
 }, false);
 var aboutmeAnchor = document.getElementById('aboutme-anchor');
 aboutmeAnchor.addEventListener('click', function (e) {
-  navEvent(e, 'AboutMe');
+  navEvent(e);
 }, false);
 var skillsAnchor = document.getElementById('skills-anchor');
 skillsAnchor.addEventListener('click', function (e) {
-  navEvent(e, 'Skills');
+  navEvent(e);
 }, false);
 var experienceAnchor = document.getElementById('experience-anchor');
 experienceAnchor.addEventListener('click', function (e) {
-  navEvent(e, 'Experience');
+  navEvent(e);
 }, false);
 var projectsAnchor = document.getElementById('projects-anchor');
 projectsAnchor.addEventListener('click', function (e) {
-  navEvent(e, 'Projects');
+  navEvent(e);
 }, false);
 var contactmeAnchor = document.getElementById('contactme-anchor');
 contactmeAnchor.addEventListener('click', function (e) {
-  navEvent(e, 'Contact-Me');
+  navEvent(e);
 }, false);
 
 function showExperience(e, companyName) {
