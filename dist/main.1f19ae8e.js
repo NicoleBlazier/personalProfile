@@ -159,21 +159,39 @@ function openInvestApp() {
 var investApp = document.getElementById('invest-app');
 investApp.addEventListener('click', openInvestApp);
 var investmentImage = document.getElementById('investment-image');
-investmentImage.addEventListener('click', openInvestApp); // form github and applications
+investmentImage.addEventListener('click', openInvestApp); // chat github and application
 
-function openGit() {
-  window.open('https://github.com/NicoleBlazier/sudoku', '_blank');
+function openChatGit() {
+  window.open('https://github.com/NicoleBlazier/chatApp', '_blank');
 }
 
-var formGit = document.getElementById('form-github');
-formGit.addEventListener('click', openGit);
+var chatGit = document.getElementById('chat-github');
+chatGit.addEventListener('click', openChatGit);
 
-function openApp() {
-  window.open('https://github.com/NicoleBlazier/sudoku', '_blank');
+function openChatApp() {
+  window.open('https://chat-app-2023.netlify.app//', '_blank');
 }
 
-var formApp = document.getElementById('form-app');
-formApp.addEventListener('click', openApp);
+var chatApp = document.getElementById('chat-app');
+chatApp.addEventListener('click', openChatApp);
+var chatImage = document.getElementById('chat-image');
+chatImage.addEventListener('click', openChatApp); // dashboard github and application
+
+function openGettisGit() {
+  window.open('https://github.com/NicoleBlazier/gettis', '_blank');
+}
+
+var gettisGit = document.getElementById('gettis-github');
+gettisGit.addEventListener('click', openGettisGit);
+
+function openGettisApp() {
+  window.open('https://sudoku-app-2022.netlify.app/', '_blank');
+}
+
+var gettisApp = document.getElementById('gettis-app');
+gettisApp.addEventListener('click', openGettisApp);
+var gettisImage = document.getElementById('gettis-image');
+gettisImage.addEventListener('click', openGettisApp);
 
 function openGmail() {
   window.open('mailto:nicole.blazier@gmail.com?subject=Job Opportunity');
@@ -275,10 +293,8 @@ function showExperience(e, companyName) {
   }
 
   var name = document.getElementById(companyName);
-  console.log(name);
   document.getElementById(companyName).style.display = "block";
   var nameClass = e.srcElement.className += " active";
-  console.log(nameClass);
 }
 
 var novartis = document.getElementById('novartis');
@@ -325,7 +341,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "58703" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62114" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

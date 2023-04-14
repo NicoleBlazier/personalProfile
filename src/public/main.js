@@ -46,20 +46,41 @@ investApp.addEventListener('click', openInvestApp)
 const investmentImage = document.getElementById('investment-image');
 investmentImage.addEventListener('click', openInvestApp)
 
-// form github and applications
-function openGit() {
-  window.open('https://github.com/NicoleBlazier/sudoku', '_blank')
+// chat github and application
+function openChatGit() {
+  window.open('https://github.com/NicoleBlazier/chatApp', '_blank')
 }
 
-const formGit = document.getElementById('form-github');
-formGit.addEventListener('click', openGit)
+const chatGit = document.getElementById('chat-github');
+chatGit.addEventListener('click', openChatGit)
 
-function openApp() {
-  window.open('https://github.com/NicoleBlazier/sudoku', '_blank')
+function openChatApp() {
+  window.open('https://chat-app-2023.netlify.app//', '_blank')
 }
 
-const formApp = document.getElementById('form-app');
-formApp.addEventListener('click', openApp)
+const chatApp = document.getElementById('chat-app');
+chatApp.addEventListener('click', openChatApp)
+
+const chatImage = document.getElementById('chat-image');
+chatImage.addEventListener('click', openChatApp)
+
+// dashboard github and application
+function openGettisGit() {
+  window.open('https://github.com/NicoleBlazier/gettis', '_blank')
+}
+
+const gettisGit = document.getElementById('gettis-github');
+gettisGit.addEventListener('click', openGettisGit)
+
+function openGettisApp() {
+  window.open('https://sudoku-app-2022.netlify.app/', '_blank')
+}
+
+const gettisApp = document.getElementById('gettis-app');
+gettisApp.addEventListener('click', openGettisApp)
+
+const gettisImage = document.getElementById('gettis-image');
+gettisImage.addEventListener('click', openGettisApp)
 
 
 function openGmail() {
@@ -165,11 +186,9 @@ function showExperience(e, companyName) {
    company[i].className = company[i].className.replace(" active", "");
   }
  const name = document.getElementById(companyName);
- console.log(name)
  document.getElementById(companyName).style.display = "block";
 
  const nameClass = e.srcElement.className += " active";
- console.log(nameClass)
 }
 
 
