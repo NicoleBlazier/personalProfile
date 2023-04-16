@@ -178,14 +178,14 @@ var chatImage = document.getElementById('chat-image');
 chatImage.addEventListener('click', openChatApp); // dashboard github and application
 
 function openGettisGit() {
-  window.open('https://github.com/NicoleBlazier/gettis', '_blank');
+  window.open('https://github.com/NicoleBlazier/gettis-app', '_blank');
 }
 
 var gettisGit = document.getElementById('gettis-github');
 gettisGit.addEventListener('click', openGettisGit);
 
 function openGettisApp() {
-  window.open('https://sudoku-app-2022.netlify.app/', '_blank');
+  window.open('https://gettis-app-2023.netlify.app/', '_blank');
 }
 
 var gettisApp = document.getElementById('gettis-app');
@@ -341,7 +341,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62114" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54462" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

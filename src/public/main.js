@@ -66,14 +66,14 @@ chatImage.addEventListener('click', openChatApp)
 
 // dashboard github and application
 function openGettisGit() {
-  window.open('https://github.com/NicoleBlazier/gettis', '_blank')
+  window.open('https://github.com/NicoleBlazier/gettis-app', '_blank')
 }
 
 const gettisGit = document.getElementById('gettis-github');
 gettisGit.addEventListener('click', openGettisGit)
 
 function openGettisApp() {
-  window.open('https://sudoku-app-2022.netlify.app/', '_blank')
+  window.open('https://gettis-app-2023.netlify.app/', '_blank')
 }
 
 const gettisApp = document.getElementById('gettis-app');
