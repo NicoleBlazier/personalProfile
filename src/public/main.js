@@ -1,8 +1,9 @@
 'use strict';
 // open resume
 function openResume() {
-  window.open('./Blazier_Resume_February_2022.pdf', '_blank')
+  window.open('https://google.com', '_blank');
 }
+
 
 const resume = document.getElementById('resume');
 resume.addEventListener('click', openResume)
