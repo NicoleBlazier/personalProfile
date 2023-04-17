@@ -1,7 +1,7 @@
 'use strict';
 // open resume
 function openResume() {
-  window.open('https://google.com', '_blank');
+  window.open('./Blazier_Resume_April_2023.pdf', '_blank');
 }
 
 

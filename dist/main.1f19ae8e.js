@@ -121,7 +121,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 'use strict'; // open resume
 
 function openResume() {
-  window.open('https://google.com', '_blank');
+  window.open('./Blazier_Resume_April_2023.pdf', '_blank');
 }
 
 var resume = document.getElementById('resume');
@@ -341,7 +341,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49280" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49276" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
