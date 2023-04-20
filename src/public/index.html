@@ -12,19 +12,27 @@
 </head>
 <body>
   <header class='header sticky'>
-    <a href='#home' id='home-anchors'>
-      <!-- <i class="fa-sharp fa-solid fa-b icon"></i> -->
-      <img src='../images/blazier-logo.png' alt='Blazier Logo' class='blazier-logo show' id='blazier-logo-1'/>
-      <img src='../images/blazier-logo-hover.png' alt='Blazier Logo' class='blazier-logo hide' id='blazier-logo-2'/>
-    </a>
-    <nav class='nav' id='nav'>
-      <a href='#home' id='home-anchor' class='nav-class'>Home |</a>
-      <a href='#aboutme' id='aboutme-anchor' class='nav-class'>About Me |</a>
-      <a href='#skills' id='skills-anchor' class='nav-class'>Skills |</a>
-      <a href='#experience' id='experience-anchor' class='nav-class'>Experience |</a>
-      <a href='#projects' id='projects-anchor' class='nav-class'>Projects |</a>
-      <a href='#contactme' id='contactme-anchor' class='nav-class'>Contact me</a>
-    </nav>
+    <div class='header-icons'>
+      <a href='#home' id='home-anchors'>
+        <img src='../images/blazier-logo.png' alt='Blazier Logo' class='blazier-logo show' id='blazier-logo-1'/>
+        <img src='../images/blazier-logo-hover.png' alt='Blazier Logo' class='blazier-logo hide' id='blazier-logo-2'/>
+      </a>
+      <input type='checkbox' id='check'>
+        <label for='check' class='checkbtn'>
+           <i class='fas fa-bars'></i>
+        </label>
+      </input>
+    </div>
+    <div class='header-nav' id='header-nav'>
+      <nav class='nav' id='nav'>
+        <a href='#home' id='home-anchor' class='nav-class'>Home |</a>
+        <a href='#aboutme' id='aboutme-anchor' class='nav-class'>About Me |</a>
+        <a href='#skills' id='skills-anchor' class='nav-class'>Skills |</a>
+        <a href='#experience' id='experience-anchor' class='nav-class'>Experience |</a>
+        <a href='#projects' id='projects-anchor' class='nav-class'>Projects |</a>
+        <a href='#contactme' id='contactme-anchor' class='nav-class'>Contact me</a>
+      </nav>
+    <div>
   </header>
   <main>
     <section id='home' class='home'>
@@ -36,13 +44,9 @@
         </div>
         <h1 class="heading-two accent-color">Front-End Software Engineer</h1>
         <h2 class="heading-three">I am a professional Front-end Software Engineer with experience from requirement engineering, ux/ui design to front-end design.</h2>
-        <!-- <a href="./Blazier_Resume_February_2022.pdf" target='_blank'> -->
           <button class='btn' id='btn'>
-            <!-- <a href='./Blazier_Resume_April_2023.pdf' download> -->
               Hire Me!
-            <!-- </a> -->
           </button>
-        <!-- </a> -->
       </div>
     </section>
     <section id='aboutme' class='about-me primary-color'>
@@ -52,7 +56,7 @@
         <p class='heading-three primary-color padding-section-one'>I love a challenge of gathering information, designing a product for a client, and then creating beautifully written code.</p>
         <p class='heading-three primary-color padding-section-one'>I love nothing more than simplicity when it comes to to coding or designing. Excellent at time management, communicating, team morale, and meeting deadlines.</p>
       </div>
-      <div>
+      <div class='profile-photo'>
         <img src='../images/blazier-photo.jpg' alt='Photo of Nicole Blazier' />
       </div>
     </section>

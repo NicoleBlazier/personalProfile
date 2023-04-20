@@ -244,6 +244,8 @@ blazierLogoOut.addEventListener('mouseout', function (e) {
   showLogo(e);
 }, false); // Highlight the nav bar or experience buttons
 
+var headerNav = document.getElementById('header-nav');
+
 function navEvent(e) {
   var className = document.getElementsByClassName('nav-class');
 
@@ -254,29 +256,49 @@ function navEvent(e) {
   e.srcElement.className += ' active';
 }
 
+function closeNav() {
+  var headerNav = document.getElementById('header-nav');
+  headerNav.style.display = 'none';
+}
+
+function openNav() {
+  var headerNav = document.getElementById('header-nav');
+  headerNav.style.display = 'block';
+}
+
+var check = document.getElementById('check');
+check.addEventListener('click', function (e) {
+  openNav();
+}, false);
 var homeAnchor = document.getElementById('home-anchor');
 homeAnchor.addEventListener('click', function (e) {
   navEvent(e);
+  closeNav();
 }, false);
 var aboutmeAnchor = document.getElementById('aboutme-anchor');
 aboutmeAnchor.addEventListener('click', function (e) {
   navEvent(e);
+  closeNav();
 }, false);
 var skillsAnchor = document.getElementById('skills-anchor');
 skillsAnchor.addEventListener('click', function (e) {
   navEvent(e);
+  closeNav();
 }, false);
 var experienceAnchor = document.getElementById('experience-anchor');
 experienceAnchor.addEventListener('click', function (e) {
   navEvent(e);
+  closeNav();
 }, false);
 var projectsAnchor = document.getElementById('projects-anchor');
 projectsAnchor.addEventListener('click', function (e) {
   navEvent(e);
+  closeNav();
 }, false);
 var contactmeAnchor = document.getElementById('contactme-anchor');
 contactmeAnchor.addEventListener('click', function (e) {
   navEvent(e);
+  closeNav();
 }, false);
 
 function showExperience(e, companyName) {

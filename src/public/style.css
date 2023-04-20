@@ -370,6 +370,27 @@ a:hover, i:hover {
   display: flex;
 }
 
+.header-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+.checkbtn {
+  font-size: 30px;
+  line-height: 50px;
+  position: absolute !important;
+  top: 2px;
+  right: 8px;
+  margin-right: 20px;
+  position: sticky;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+  position: relative;
+}
 
 @media only screen and (max-width: 828px) {
   /* For mobile phones */
@@ -378,21 +399,41 @@ a:hover, i:hover {
     flex-direction: column !important;
     align-items: center !important;
     color: #ffffff !important;
-    height: auto !important;
-    width: 828px !important;
     background-color: #3d22a0 !important;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
     text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
+  }
+
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  #header-nav {
+    display: none;
   }
 
   .nav {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+    margin: 0px !important;
+    width: 828px !important;
+    background-color: #3d22a0 !important;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
   }
 
+  .nav-class {
+    margin: 25px !important;
+  }
+
+
   .home {
-    height: 500px !important;
+    height: 41em !important;
     margin-top: 4em !important;
   }
 
@@ -435,21 +476,24 @@ a:hover, i:hover {
   .about-me {
     display: flex !important;
     flex-direction: column !important;
-    padding: 50px 0 0 0 !important;
+    padding: 80px 0 0 0 !important;
     height: 38em !important;
+  }
+
+  .profile-photo {
+    display: flex;
+    justify-content: center;
   }
 
   img {
     height: 340.625px;
     width: 281.562px;
-    text-align: center;
-    margin: 0px 25px !important;
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
   }
 
   .skills {
-    height: auto !important;
+    height: 24em !important;
   }
 
   .icons-grp {
@@ -463,12 +507,13 @@ a:hover, i:hover {
 
   .experience {
     height: 45em !important;
-    padding: 50px 25px 0px 25px !important;
+    padding: 80px 25px 0px 25px !important;
   }
 
   .companies {
     display: flex !important;
     flex-direction: column !important;
+    align-items: center;
   }
 
   .company {
@@ -482,7 +527,7 @@ a:hover, i:hover {
 
   .projects {
     height: auto !important;
-    padding: 50px 10px 0px 10px !important;
+    padding: 80px 10px 0px 10px !important;
   }
 
   .image-box {
@@ -517,8 +562,8 @@ a:hover, i:hover {
   }
 
   .contact-me {
-    height: 25em !important;
-    padding: 50px 25px 0px 25px !important;
+    height: 30em !important;
+    padding: 80px 25px 0px 25px !important;
   }
 
   .contact-text {
@@ -528,6 +573,11 @@ a:hover, i:hover {
   .social-medias {
     display: flex !important;
     flex-direction: column !important;
+    margin-top: 80px;
+  }
+
+  .social-media {
+    margin: 10px;
   }
 
   .sm-icon {

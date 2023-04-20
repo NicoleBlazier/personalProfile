@@ -137,6 +137,8 @@ blazierLogoOut.addEventListener('mouseout', function(e) {
 }, false)
 
 // Highlight the nav bar or experience buttons
+const headerNav = document.getElementById('header-nav');
+
 function navEvent(e) {
   const className = document.getElementsByClassName('nav-class')
   for (var i=0; i < className.length; i++) {
@@ -145,34 +147,56 @@ function navEvent(e) {
   e.srcElement.className += ' active'
 }
 
+function closeNav() {
+  const headerNav = document.getElementById('header-nav');
+  headerNav.style.display = 'none';
+}
+
+function openNav() {
+  const headerNav = document.getElementById('header-nav');
+  headerNav.style.display = 'block';
+
+}
+
+const check = document.getElementById('check');
+check.addEventListener('click', function(e) {
+  openNav()
+}, false)
+
 const homeAnchor = document.getElementById('home-anchor');
 homeAnchor.addEventListener('click', function(e) {
   navEvent(e)
+  closeNav()
 }, false)
 
 const aboutmeAnchor = document.getElementById('aboutme-anchor');
 aboutmeAnchor.addEventListener('click', function(e) {
   navEvent(e)
+  closeNav()
 }, false)
 
 const skillsAnchor = document.getElementById('skills-anchor');
 skillsAnchor.addEventListener('click', function(e) {
   navEvent(e)
+  closeNav()
 }, false)
 
 const experienceAnchor = document.getElementById('experience-anchor');
 experienceAnchor.addEventListener('click', function(e) {
   navEvent(e)
+  closeNav()
 }, false)
 
 const projectsAnchor = document.getElementById('projects-anchor');
 projectsAnchor.addEventListener('click', function(e) {
   navEvent(e)
+  closeNav()
 }, false)
 
 const contactmeAnchor = document.getElementById('contactme-anchor');
 contactmeAnchor.addEventListener('click', function(e) {
   navEvent(e)
+  closeNav()
 }, false)
 
 
