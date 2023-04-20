@@ -573,7 +573,6 @@ a:hover, i:hover {
   .social-medias {
     display: flex !important;
     flex-direction: column !important;
-    margin-top: 40px;
   }
 
   .social-media {
