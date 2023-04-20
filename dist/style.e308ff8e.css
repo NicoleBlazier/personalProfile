@@ -371,7 +371,7 @@ a:hover, i:hover {
 }
 
 
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 828px) {
   /* For mobile phones */
   .header  {
     display: flex !important;
@@ -379,7 +379,7 @@ a:hover, i:hover {
     align-items: center !important;
     color: #ffffff !important;
     height: auto !important;
-    width: 400px !important;
+    width: 828px !important;
     background-color: #3d22a0 !important;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
     text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
