@@ -1,9 +1,9 @@
 'use strict';
+
 // open resume
 function openResume() {
   window.open('./Blazier_Resume_April_2023.pdf', '_blank');
 }
-
 
 const resume = document.getElementById('resume');
 resume.addEventListener('click', openResume)
@@ -116,7 +116,6 @@ showNovartis();
 function showLogo(e) {
   const logo = document.getElementsByClassName('blazier-logo');
   for (var i=0; i < logo.length; i++) {
-    console.log(logo[i].className)
     if (logo[i].className == 'blazier-logo show') {
       logo[i].className = logo[i].className.replace('blazier-logo show', 'blazier-logo hide')
     } else if (logo[i].className == 'blazier-logo hide') {
@@ -147,20 +146,25 @@ function navEvent(e) {
   e.srcElement.className += ' active'
 }
 
-function closeNav() {
-  const headerNav = document.getElementById('header-nav');
-  headerNav.style.display = 'none';
+function toggleNav() {
+  const displayHead = headerNav.style.display;
+  if (displayHead === 'block') {
+    headerNav.style.display = 'none';
+  } else {
+    headerNav.style.display = 'block';
+  }
 }
 
-function openNav() {
-  const headerNav = document.getElementById('header-nav');
-  headerNav.style.display = 'block';
-
+function closeNav() {
+  const displayHead = headerNav.style.display;
+  if (displayHead === 'block') {
+    headerNav.style.display = 'none';
+  }
 }
 
 const check = document.getElementById('check');
 check.addEventListener('click', function(e) {
-  openNav()
+  toggleNav(e)
 }, false)
 
 const homeAnchor = document.getElementById('home-anchor');
@@ -171,8 +175,8 @@ homeAnchor.addEventListener('click', function(e) {
 
 const aboutmeAnchor = document.getElementById('aboutme-anchor');
 aboutmeAnchor.addEventListener('click', function(e) {
-  navEvent(e)
-  closeNav()
+ navEvent(e)
+ closeNav()
 }, false)
 
 const skillsAnchor = document.getElementById('skills-anchor');

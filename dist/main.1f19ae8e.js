@@ -118,98 +118,84 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   return newRequire;
 })({"main.js":[function(require,module,exports) {
-'use strict'; // open resume
+'use strict';
 
+// open resume
 function openResume() {
   window.open('./Blazier_Resume_April_2023.pdf', '_blank');
 }
-
 var resume = document.getElementById('resume');
 resume.addEventListener('click', openResume);
 var btn = document.getElementById('btn');
-btn.addEventListener('click', openResume); // sudoku github and application
+btn.addEventListener('click', openResume);
 
+// sudoku github and application
 function openSudokuGit() {
   window.open('https://github.com/NicoleBlazier/sudoku', '_blank');
 }
-
 var sudokuGit = document.getElementById('sudoku-github');
 sudokuGit.addEventListener('click', openSudokuGit);
-
 function openSudokuApp() {
   window.open('https://sudoku-app-2022.netlify.app/', '_blank');
 }
-
 var sudokuApp = document.getElementById('sudoku-app');
 sudokuApp.addEventListener('click', openSudokuApp);
 var sudokuImage = document.getElementById('sudoku-image');
-sudokuImage.addEventListener('click', openSudokuApp); // investment github and application
+sudokuImage.addEventListener('click', openSudokuApp);
 
+// investment github and application
 function openInvestGit() {
   window.open('https://github.com/NicoleBlazier/investmentApp', '_blank');
 }
-
 var investGit = document.getElementById('invest-github');
 investGit.addEventListener('click', openInvestGit);
-
 function openInvestApp() {
   window.open('https://investment-app-2022.netlify.app/', '_blank');
 }
-
 var investApp = document.getElementById('invest-app');
 investApp.addEventListener('click', openInvestApp);
 var investmentImage = document.getElementById('investment-image');
-investmentImage.addEventListener('click', openInvestApp); // chat github and application
+investmentImage.addEventListener('click', openInvestApp);
 
+// chat github and application
 function openChatGit() {
   window.open('https://github.com/NicoleBlazier/chatApp', '_blank');
 }
-
 var chatGit = document.getElementById('chat-github');
 chatGit.addEventListener('click', openChatGit);
-
 function openChatApp() {
   window.open('https://chat-app-2023.netlify.app//', '_blank');
 }
-
 var chatApp = document.getElementById('chat-app');
 chatApp.addEventListener('click', openChatApp);
 var chatImage = document.getElementById('chat-image');
-chatImage.addEventListener('click', openChatApp); // dashboard github and application
+chatImage.addEventListener('click', openChatApp);
 
+// dashboard github and application
 function openGettisGit() {
   window.open('https://github.com/NicoleBlazier/gettis-app', '_blank');
 }
-
 var gettisGit = document.getElementById('gettis-github');
 gettisGit.addEventListener('click', openGettisGit);
-
 function openGettisApp() {
   window.open('https://gettis-app-2023.netlify.app/', '_blank');
 }
-
 var gettisApp = document.getElementById('gettis-app');
 gettisApp.addEventListener('click', openGettisApp);
 var gettisImage = document.getElementById('gettis-image');
 gettisImage.addEventListener('click', openGettisApp);
-
 function openGmail() {
   window.open('mailto:nicole.blazier@gmail.com?subject=Job Opportunity');
 }
-
 var gmail = document.getElementById('gmail');
 gmail.addEventListener('click', openGmail);
-
 function openLinkedIn() {
   window.open('https://www.linkedin.com/in/nicole-blazier-55129723/', '_blank');
 }
-
 var linkedin = document.getElementById('linkedin');
 linkedin.addEventListener('click', openLinkedIn);
-
 function showNovartis() {
   var description = document.getElementsByClassName('description');
-
   for (var i = 0; i < description.length; i++) {
     if (description[i].id === 'Novartis') {
       description[i].style.display = 'block';
@@ -218,15 +204,12 @@ function showNovartis() {
     }
   }
 }
+showNovartis();
 
-showNovartis(); // Show logo when hovering
-
+// Show logo when hovering
 function showLogo(e) {
   var logo = document.getElementsByClassName('blazier-logo');
-
   for (var i = 0; i < logo.length; i++) {
-    console.log(logo[i].className);
-
     if (logo[i].className == 'blazier-logo show') {
       logo[i].className = logo[i].className.replace('blazier-logo show', 'blazier-logo hide');
     } else if (logo[i].className == 'blazier-logo hide') {
@@ -234,7 +217,6 @@ function showLogo(e) {
     }
   }
 }
-
 var blazierLogoOver = document.getElementById('blazier-logo-1');
 blazierLogoOver.addEventListener('mouseover', function (e) {
   showLogo(e);
@@ -242,33 +224,34 @@ blazierLogoOver.addEventListener('mouseover', function (e) {
 var blazierLogoOut = document.getElementById('blazier-logo-2');
 blazierLogoOut.addEventListener('mouseout', function (e) {
   showLogo(e);
-}, false); // Highlight the nav bar or experience buttons
+}, false);
 
+// Highlight the nav bar or experience buttons
 var headerNav = document.getElementById('header-nav');
-
 function navEvent(e) {
   var className = document.getElementsByClassName('nav-class');
-
   for (var i = 0; i < className.length; i++) {
     className[i].className = className[i].className.replace(" active", "");
   }
-
   e.srcElement.className += ' active';
 }
-
+function toggleNav() {
+  var displayHead = headerNav.style.display;
+  if (displayHead === 'block') {
+    headerNav.style.display = 'none';
+  } else {
+    headerNav.style.display = 'block';
+  }
+}
 function closeNav() {
-  var headerNav = document.getElementById('header-nav');
-  headerNav.style.display = 'none';
+  var displayHead = headerNav.style.display;
+  if (displayHead === 'block') {
+    headerNav.style.display = 'none';
+  }
 }
-
-function openNav() {
-  var headerNav = document.getElementById('header-nav');
-  headerNav.style.display = 'block';
-}
-
 var check = document.getElementById('check');
 check.addEventListener('click', function (e) {
-  openNav();
+  toggleNav(e);
 }, false);
 var homeAnchor = document.getElementById('home-anchor');
 homeAnchor.addEventListener('click', function (e) {
@@ -300,25 +283,19 @@ contactmeAnchor.addEventListener('click', function (e) {
   navEvent(e);
   closeNav();
 }, false);
-
 function showExperience(e, companyName) {
   var description = document.getElementsByClassName('description');
-
   for (var i = 0; i < description.length; i++) {
     description[i].style.display = "none";
   }
-
   var company = document.getElementsByClassName('company');
-
   for (var i = 0; i < company.length; i++) {
     company[i].className = company[i].className.replace(" active", "");
   }
-
   var name = document.getElementById(companyName);
   document.getElementById(companyName).style.display = "block";
   var nameClass = e.srcElement.className += " active";
 }
-
 var novartis = document.getElementById('novartis');
 novartis.addEventListener('click', function (e) {
   showExperience(e, 'Novartis');
@@ -339,7 +316,6 @@ louisiana.addEventListener('click', function (e) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
-
 function Module(moduleName) {
   OldModule.call(this, moduleName);
   this.hot = {
@@ -355,37 +331,32 @@ function Module(moduleName) {
   };
   module.bundle.hotData = null;
 }
-
 module.bundle.Module = Module;
 var checkedAssets, assetsToAccept;
 var parent = module.bundle.parent;
-
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "52839" + '/');
-
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49446" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
     var data = JSON.parse(event.data);
-
     if (data.type === 'update') {
       var handled = false;
       data.assets.forEach(function (asset) {
         if (!asset.isNew) {
           var didAccept = hmrAcceptCheck(global.parcelRequire, asset.id);
-
           if (didAccept) {
             handled = true;
           }
         }
-      }); // Enable HMR for CSS by default.
+      });
 
+      // Enable HMR for CSS by default.
       handled = handled || data.assets.every(function (asset) {
         return asset.type === 'css' && asset.generated.js;
       });
-
       if (handled) {
         console.clear();
         data.assets.forEach(function (asset) {
@@ -399,20 +370,16 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
         location.reload();
       }
     }
-
     if (data.type === 'reload') {
       ws.close();
-
       ws.onclose = function () {
         location.reload();
       };
     }
-
     if (data.type === 'error-resolved') {
       console.log('[parcel] ✨ Error resolved');
       removeErrorOverlay();
     }
-
     if (data.type === 'error') {
       console.error('[parcel] 🚨  ' + data.error.message + '\n' + data.error.stack);
       removeErrorOverlay();
@@ -421,19 +388,17 @@ if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
     }
   };
 }
-
 function removeErrorOverlay() {
   var overlay = document.getElementById(OVERLAY_ID);
-
   if (overlay) {
     overlay.remove();
   }
 }
-
 function createErrorOverlay(data) {
   var overlay = document.createElement('div');
-  overlay.id = OVERLAY_ID; // html encode message and stack trace
+  overlay.id = OVERLAY_ID;
 
+  // html encode message and stack trace
   var message = document.createElement('div');
   var stackTrace = document.createElement('pre');
   message.innerText = data.error.message;
@@ -441,41 +406,31 @@ function createErrorOverlay(data) {
   overlay.innerHTML = '<div style="background: black; font-size: 16px; color: white; position: fixed; height: 100%; width: 100%; top: 0px; left: 0px; padding: 30px; opacity: 0.85; font-family: Menlo, Consolas, monospace; z-index: 9999;">' + '<span style="background: red; padding: 2px 4px; border-radius: 2px;">ERROR</span>' + '<span style="top: 2px; margin-left: 5px; position: relative;">🚨</span>' + '<div style="font-size: 18px; font-weight: bold; margin-top: 20px;">' + message.innerHTML + '</div>' + '<pre>' + stackTrace.innerHTML + '</pre>' + '</div>';
   return overlay;
 }
-
 function getParents(bundle, id) {
   var modules = bundle.modules;
-
   if (!modules) {
     return [];
   }
-
   var parents = [];
   var k, d, dep;
-
   for (k in modules) {
     for (d in modules[k][1]) {
       dep = modules[k][1][d];
-
       if (dep === id || Array.isArray(dep) && dep[dep.length - 1] === id) {
         parents.push(k);
       }
     }
   }
-
   if (bundle.parent) {
     parents = parents.concat(getParents(bundle.parent, id));
   }
-
   return parents;
 }
-
 function hmrApply(bundle, asset) {
   var modules = bundle.modules;
-
   if (!modules) {
     return;
   }
-
   if (modules[asset.id] || !bundle.parent) {
     var fn = new Function('require', 'module', 'exports', asset.generated.js);
     asset.isNew = !modules[asset.id];
@@ -484,58 +439,45 @@ function hmrApply(bundle, asset) {
     hmrApply(bundle.parent, asset);
   }
 }
-
 function hmrAcceptCheck(bundle, id) {
   var modules = bundle.modules;
-
   if (!modules) {
     return;
   }
-
   if (!modules[id] && bundle.parent) {
     return hmrAcceptCheck(bundle.parent, id);
   }
-
   if (checkedAssets[id]) {
     return;
   }
-
   checkedAssets[id] = true;
   var cached = bundle.cache[id];
   assetsToAccept.push([bundle, id]);
-
   if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
     return true;
   }
-
   return getParents(global.parcelRequire, id).some(function (id) {
     return hmrAcceptCheck(global.parcelRequire, id);
   });
 }
-
 function hmrAcceptRun(bundle, id) {
   var cached = bundle.cache[id];
   bundle.hotData = {};
-
   if (cached) {
     cached.hot.data = bundle.hotData;
   }
-
   if (cached && cached.hot && cached.hot._disposeCallbacks.length) {
     cached.hot._disposeCallbacks.forEach(function (cb) {
       cb(bundle.hotData);
     });
   }
-
   delete bundle.cache[id];
   bundle(id);
   cached = bundle.cache[id];
-
   if (cached && cached.hot && cached.hot._acceptCallbacks.length) {
     cached.hot._acceptCallbacks.forEach(function (cb) {
       cb();
     });
-
     return true;
   }
 }
