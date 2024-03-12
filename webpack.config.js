@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   // Entry point of your application
-  entry: './src/public/index.js', // Adjust this path to where your main JavaScript file is located
+  entry: './src/public/main.js', // Adjust this path to where your main JavaScript file is located
 
   // Output configuration for the bundled file
   output: {
