@@ -3,7 +3,7 @@
 // open resume
 function openResume() {
   alert('clicked')
-  window.open('./Blazier_Resume_March_2024.pdf', '_blank');
+  window.open('../docs/Blazier_Resume_March_2024.pdf', '_blank');
 }
 
 const resume = document.getElementById('resume');

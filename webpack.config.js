@@ -1,15 +1,54 @@
 const path = require('path');
 
 module.exports = {
-  // Entry point of your application
-  entry: './src/public/main.js', // Adjust this path to where your main JavaScript file is located
+  // Entry point remains the same
+  entry: './src/public/main.js',
 
-  // Output configuration for the bundled file
+  // Output configuration remains the same
   output: {
-    path: path.resolve(__dirname, 'dist'), // Output directory
-    filename: 'bundle.js', // Output bundle file name
+    path: path.resolve(__dirname, 'dist'),
+    filename: 'bundle.js',
   },
 
-  // Mode can be 'development' or 'production'
+  // Mode remains the same
   mode: 'development',
+
+  // Webpack dev server configuration (optional)
+  devServer: {
+    contentBase: './dist',
+    open: true,
+  },
+
+  // Module rules for handling different asset types
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(jpg|png)$/, // Image files
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'images/', // Where to put images
+            },
+          },
+        ],
+      },
+      {
+        test: /\.pdf$/, // PDF files
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              outputPath: 'docs/', // Where to put documents/PDFs
+            },
+          },
+        ],
+      },
+      // Add other file types here as needed
+    ],
+  },
 };
