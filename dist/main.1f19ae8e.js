@@ -122,7 +122,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
 // open resume
 function openResume() {
-  window.open('./Blazier_Resume_April_2023.pdf', '_blank');
+  window.open('./Blazier_Resume_March_2024.pdf', '_blank');
 }
 var resume = document.getElementById('resume');
 resume.addEventListener('click', openResume);
@@ -194,17 +194,17 @@ function openLinkedIn() {
 }
 var linkedin = document.getElementById('linkedin');
 linkedin.addEventListener('click', openLinkedIn);
-function showNovartis() {
+function showCurJob() {
   var description = document.getElementsByClassName('description');
   for (var i = 0; i < description.length; i++) {
-    if (description[i].id === 'Novartis') {
+    if (description[i].id === 'Cpsenergy') {
       description[i].style.display = 'block';
     } else {
       description[i].style.display = "none";
     }
   }
 }
-showNovartis();
+showCurJob();
 
 // Show logo when hovering
 function showLogo(e) {
@@ -300,9 +300,9 @@ var novartis = document.getElementById('novartis');
 novartis.addEventListener('click', function (e) {
   showExperience(e, 'Novartis');
 }, false);
-var flexbox = document.getElementById('flexbox');
+var flexbox = document.getElementById('cpsenergy');
 flexbox.addEventListener('click', function (e) {
-  showExperience(e, 'Flexbox');
+  showExperience(e, 'Cpsenergy');
 }, false);
 var american = document.getElementById('american');
 american.addEventListener('click', function (e) {
@@ -337,7 +337,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49446" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64133" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

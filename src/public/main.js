@@ -2,7 +2,7 @@
 
 // open resume
 function openResume() {
-  window.open('./Blazier_Resume_April_2023.pdf', '_blank');
+  window.open('./Blazier_Resume_March_2024.pdf', '_blank');
 }
 
 const resume = document.getElementById('resume');
@@ -99,10 +99,10 @@ function openLinkedIn() {
 const linkedin = document.getElementById('linkedin');
 linkedin.addEventListener('click', openLinkedIn)
 
-function showNovartis() {
+function showCurJob() {
   const description = document.getElementsByClassName('description');
   for (var i=0; i < description.length; i++ ) {
-    if (description[i].id === 'Novartis') {
+    if (description[i].id === 'Cpsenergy') {
       description[i].style.display = 'block'
     } else {
       description[i].style.display = "none";
@@ -110,7 +110,7 @@ function showNovartis() {
   }
 }
 
-showNovartis();
+showCurJob();
 
 // Show logo when hovering
 function showLogo(e) {
@@ -226,9 +226,9 @@ function showExperience(e, companyName) {
     showExperience(e, 'Novartis')
   }, false)
 
-  const flexbox = document.getElementById('flexbox');
+  const flexbox = document.getElementById('cpsenergy');
   flexbox.addEventListener('click', function(e) {
-    showExperience(e, 'Flexbox')
+    showExperience(e, 'Cpsenergy')
   }, false)
 
   const american = document.getElementById('american');
