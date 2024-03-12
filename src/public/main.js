@@ -2,6 +2,7 @@
 
 // open resume
 function openResume() {
+  alert('clicked')
   window.open('./Blazier_Resume_March_2024.pdf', '_blank');
 }
 
@@ -10,6 +11,7 @@ resume.addEventListener('click', openResume)
 
 const btn = document.getElementById('btn');
 btn.addEventListener('click', openResume)
+
 
 // sudoku github and application
 function openSudokuGit() {
