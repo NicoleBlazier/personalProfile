@@ -1,15 +1,43 @@
 'use strict';
+import './style.css';
+// import logo from '../images/blazier-logo.png';
+// import logoHover from '../images/blazier-logo-hover.png';
+import BlazierResume from '../docs/Blazier_Resume_March_2024.pdf';
+
+//Photos
+// Set initial logo sources
+// document.getElementById('blazier-logo-1').src = logo;
+// document.getElementById('blazier-logo-2').src = logoHover;
+
+// //Logo
+// // Get the anchor element to add event listeners
+// const homeLogos = document.getElementById('home-logos');
+//
+// // Add mouseover event listener to change logo
+// homeLogos.addEventListener('mouseover', function() {
+//   document.getElementById('blazier-logo-1').classList.add('hide');
+//   document.getElementById('blazier-logo-1').classList.remove('show');
+//   document.getElementById('blazier-logo-2').classList.add('show');
+//   document.getElementById('blazier-logo-2').classList.remove('hide');
+// });
+//
+// // Add mouseout event listener to revert logo
+// homeLogos.addEventListener('mouseout', function() {
+//   document.getElementById('blazier-logo-1').classList.add('show');
+//   document.getElementById('blazier-logo-1').classList.remove('hide');
+//   document.getElementById('blazier-logo-2').classList.add('hide');
+//   document.getElementById('blazier-logo-2').classList.remove('show');
+// });
 
 // open resume
 function openResume() {
-  alert('clicked')
-  window.open('../docs/Blazier_Resume_March_2024.pdf', '_blank');
+  window.open(BlazierResume, '_blank');
 }
 
 const resume = document.getElementById('resume');
 resume.addEventListener('click', openResume)
 
-const btn = document.getElementById('btn');
+const btn = document.getElementById('download-resume');
 btn.addEventListener('click', openResume)
 
 
