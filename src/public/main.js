@@ -2,7 +2,7 @@
 import './style.css';
 // import logo from '../images/blazier-logo.png';
 // import logoHover from '../images/blazier-logo-hover.png';
-import BlazierResume from '../docs/Blazier_Resume_March_2024.pdf';
+import BlazierResume from '../docs/Blazier_Resume_April_2024.pdf';
 
 //Photos
 // Set initial logo sources
