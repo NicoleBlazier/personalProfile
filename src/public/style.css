@@ -63,7 +63,7 @@ p {
 }
 
 .padding-two {
-  padding: 0.4em 0.2em 0em 0.2em;
+  padding: 0.2em 0.2em 0em 0.2em;
 }
 
 /* Titles and Anchors */
@@ -177,7 +177,7 @@ img {
 .about-me {
   display: flex;
   flex-direction: row;
-  height: 45em;
+  height: auto;
   padding: 100px 50px 0px 50px;
   background-image: url('../images/aboutme-background.png');
   background-position: top;
@@ -400,13 +400,13 @@ a:hover, i:hover {
 @media only screen and (max-width: 828px) {
   /* For mobile phones */
   .header  {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    color: #ffffff !important;
-    background-color: #3d22a0 !important;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px !important;
-    text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ffffff;
+    background-color: #3d22a0;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
 
   label.logo {
@@ -423,23 +423,23 @@ a:hover, i:hover {
   }
 
   .nav {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-    margin: 0px !important;
-    width: 828px !important;
-    background-color: #3d22a0 !important;
-    text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px !important;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    width: 828px;
+    background-color: #3d22a0;
+    text-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
   }
 
   .nav-class {
-    margin: 25px !important;
+    margin: 25px;
   }
 
 
   .home {
-    height: 41em !important;
-    margin-top: 4em !important;
+    height: 41em;
+    margin-top: 4em;
   }
 
   .name {
@@ -449,8 +449,8 @@ a:hover, i:hover {
 
   .home-text {
     text-align: center;
-    width: 100% !important;
-    padding: 10em 0em 0em 0em !important;
+    width: 100%;
+    padding: 10em 0em 0em 0em;
   }
 
   .heading-one {
@@ -479,10 +479,10 @@ a:hover, i:hover {
   }
 
   .about-me {
-    display: flex !important;
-    flex-direction: column !important;
-    padding: 80px 0 0 0 !important;
-    height: 38em !important;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 0 0 0;
+    height: auto;
   }
 
   .profile-photo {
@@ -498,7 +498,7 @@ a:hover, i:hover {
   }
 
   .skills {
-    height: 24em !important;
+    height: auto;
   }
 
   .icons-grp {
@@ -506,33 +506,33 @@ a:hover, i:hover {
   }
 
   .icons {
-    font-size: 50px !important;
-    padding: 10px !important;
+    font-size: 50px;
+    padding: 10px;
   }
 
   .experience {
-    height: 45em !important;
-    padding: 80px 25px 0px 25px !important;
+    height: auto;
+    padding: 80px 25px 0px 25px;
   }
 
   .companies {
-    display: flex !important;
-    flex-direction: column !important;
+    display: flex;
+    flex-direction: column;
     align-items: center;
   }
 
   .company {
-    margin: 5px 2px 0px 2px !important;
+    margin: 5px 2px 0px 2px;
   }
 
   .description {
-    height: auto !important;
-    padding: 35px 10px !important;
+    height: auto;
+    padding: 35px 10px;
   }
 
   .projects {
-    height: auto !important;
-    padding: 80px 10px 0px 10px !important;
+    height: auto;
+    padding: 80px 10px 0px 10px;
   }
 
   .image-box {
@@ -548,44 +548,44 @@ a:hover, i:hover {
   }
 
   .box {
-    height: 150px !important;
-    width: 150px !important;
+    height: 150px;
+    width: 150px;
   }
 
   .box-icons {
-    padding: 0px 8px 0px 0px !important;
+    padding: 0px 8px 0px 0px;
   }
 
   .box-icon {
-    height: 3.5px !important;
-    width: 3.5px !important;
-    margin: 6px !important;
+    height: 3.5px;
+    width: 3.5px;
+    margin: 6px;
   }
 
   .box-text {
-    margin: -5px 0px 0px 10px !important;
+    margin: -5px 0px 0px 10px;
   }
 
   .contact-me {
-    height: 30em !important;
-    padding: 80px 25px 0px 25px !important;
+    height: auto;
+    padding: 80px 25px 0px 25px;
   }
 
   .contact-text {
-    padding: 5px 0px !important;
+    padding: 5px 0px;
   }
 
   .social-medias {
-    display: flex !important;
-    flex-direction: column !important;
+    display: flex;
+    flex-direction: column;
   }
 
   .sm-icon {
-    font-size: 20px !important;
+    font-size: 20px;
   }
 
   .footer {
-    display: flex !important;
-    flex-direction: column !important;
+    display: flex;
+    flex-direction: column;
   }
 }
