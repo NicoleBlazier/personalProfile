@@ -1,5 +1,4 @@
 'use strict';
-import './style.css';
 // import logo from '../images/blazier-logo.png';
 // import logoHover from '../images/blazier-logo-hover.png';
 import BlazierResume from '../docs/NicoleBlazierResume.pdf';
@@ -78,22 +77,22 @@ const investmentImage = document.getElementById('investment-image');
 investmentImage.addEventListener('click', openInvestApp)
 
 // chat github and application
-function openChatGit() {
-  window.open('https://github.com/NicoleBlazier/chatApp', '_blank')
-}
+//function openChatGit() {
+//  window.open('https://github.com/NicoleBlazier/chatApp', '_blank')
+//}
 
-const chatGit = document.getElementById('chat-github');
-chatGit.addEventListener('click', openChatGit)
+//const chatGit = document.getElementById('chat-github');
+//chatGit.addEventListener('click', openChatGit)
 
-function openChatApp() {
-  window.open('https://chat-app-2023.netlify.app//', '_blank')
-}
+//function openChatApp() {
+//  window.open('https://chat-app-2023.netlify.app//', '_blank')
+//}
 
-const chatApp = document.getElementById('chat-app');
-chatApp.addEventListener('click', openChatApp)
+//const chatApp = document.getElementById('chat-app');
+//chatApp.addEventListener('click', openChatApp)
 
-const chatImage = document.getElementById('chat-image');
-chatImage.addEventListener('click', openChatApp)
+//const chatImage = document.getElementById('chat-image');
+//chatImage.addEventListener('click', openChatApp)
 
 // dashboard github and application
 function openGettisGit() {
@@ -130,7 +129,9 @@ const linkedin = document.getElementById('linkedin');
 linkedin.addEventListener('click', openLinkedIn)
 
 function showCurJob() {
+  console.log('ran')
   const description = document.getElementsByClassName('description');
+  console.log(description)
   for (var i=0; i < description.length; i++ ) {
     if (description[i].id === 'Cpsenergy') {
       description[i].style.display = 'block'
@@ -259,14 +260,4 @@ function showExperience(e, companyName) {
   const flexbox = document.getElementById('cpsenergy');
   flexbox.addEventListener('click', function(e) {
     showExperience(e, 'Cpsenergy')
-  }, false)
-
-  const american = document.getElementById('american');
-  american.addEventListener('click', function(e) {
-    showExperience(e, 'American')
-  }, false)
-
-  const louisiana = document.getElementById('louisiana');
-  louisiana.addEventListener('click', function(e) {
-    showExperience(e, 'Louisiana')
   }, false)
