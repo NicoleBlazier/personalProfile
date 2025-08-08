@@ -1,4 +1,5 @@
 'use strict';
+import './style.css';
 // import logo from '../images/blazier-logo.png';
 // import logoHover from '../images/blazier-logo-hover.png';
 import BlazierResume from '../docs/NicoleBlazierResume.pdf';
